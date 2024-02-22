@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Abirami_Ravikumar_form.css">
+    
+</head>
+<body>
+    <header class="head">
+      <h1>ChronoCraft </h1><h2> Analog and Smart Watches</h2> </h1>
+      <p><b>Timeless Elegance at Your Fingertips 
+      Explore Our Exclusive Watch Collection Today!</b></p>
+      
+    </header>
+    
+    <div class="products">
+        <div class="product">
+            <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product Image 1">
+            <h3 class="product-name">Silver Linked Bracelet Silver and Black Round Chronograph Watch</h3>
+            <p class="price">Rs.1050</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://nordgreen.com/cdn/shop/collections/CP_Male_Native_961fa23a-161f-4a6d-ad4d-fc4ca0ddec96_970x.webp?v=1673502035" alt="Product Image 2">
+            <h3 class="product-name">Native
+                White Dial - Brown Leather</h3>
+            <p class="price">Rs.899</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://media.wired.com/photos/61bd571ff6b645152a4dc4ad/master/w_1920,c_limit/Evolution-Luxury-Watches-Oris.jpg" alt="Product Image 3">
+            <h3 class="product-name">Silver Linked Bracelet Silver and Blue Round Watch</h3>
+            <p class="price">Rs.799</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://atlanticwatches.ch/wp-content/uploads/2023/07/Atlantic-Watches-Limited-Editions-300x300.png" alt="Product Image 4">
+            <h3 class="product-name">Worldmaster Open Heart LE Coffee</h3>
+            <p class="price">Rs.499</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw61458d43/images/Titan/Catalog/90188AP01_1.jpg?sw=800&sh=800" alt="Product Image 5">
+            <h3 class="product-name"> Titan Smart Watch with 1.96 Inch Display</h3>
+            <p class="price">Rs.4995</p>
+            <button class="add-to-cart" onclick="handleCart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwbc347167/images/Fastrack/Catalog/38074AP04_1.jpg?sw=800&sh=800" alt="Product Image 6">
+            <h3 class="product-name"> Fast Track--Reflex Play</h3>
+            <p class="price">Rs.3695</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://img.beatxp.com/prod/product/443/1st%20Image%20%285%29.webp" alt="Product Image 7">
+            <h3 class="product-name">Sigma Smartwatch with 1.38” HD Display</h3>
+            <p class="price">Rs.799</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://imagescdn.thecollective.in/img/app/product/4/463982-3663667.jpg?" alt="Product Image 8">
+            <h2 class="product-name">Fossil Golgen Gen 4 Smart  Watch</h2>
+            <p class="price">Rs.21,995</p>
+            <button class="add-to-cart">Add to Cart</button>
+         </div>
+    </div>
+        <div>
+        <p class="shopping-cart">Cart <span id="cartCount">0</span></p>
+        <button class="buy-now" id="buy-now">Buy Now</button>
+        </div>
+        <script>document.addEventListener('DOMContentLoaded', function()
+         {
+         const addToCartButtons = document.querySelectorAll('.add-to-cart')
+         const cartCountSpan = document.getElementById('cartCount')
+         const buynow=document.getElementById('buy-now')
+         const buyNowBtn = document.querySelector('.buy-now')
+         let cartCount = 0
+            addToCartButtons.forEach(button => 
+            {
+                button.addEventListener
+                ('click', function()
+                    {
+                        cartCount++
+                        cartCountSpan.textContent = cartCount
+                    }
+              )
+            }
+         )
+         
+         
+         buyNowBtn.addEventListener('click', function()
+         {
+            let cartCount = parseInt(cartCountSpan.textContent)
+            if (cartCount === 0) 
+                {alert("Your cart is empty. Please add items to your cart before buying.") } 
+            else 
+            {
+                alert("Your order has been placed. Thank you for shopping with us!")
+                cartCountSpan.textContent = '0'
+            }
+         })
+         })</script>
+</body>
+</html>

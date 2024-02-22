@@ -1,0 +1,97 @@
+.head{
+    color:rgb(10, 10, 10);
+    border: 2px solid black;
+    text-align:center;
+    background-color: rgb(180, 153, 157);
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url('https://www.shutterstock.com/image-photo/wrist-watch-water-drops-reflection-260nw-302011454.jpg');
+    background-repeat: no-repeat; */
+ 
+    
+}
+body{
+    background-color: rgb(228, 228, 228)
+}
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 3px solid #060506;
+    border-radius: 5px;
+    background-color: #abc9c3;
+    width: 200px;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-name {
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.add-to-cart,
+.buy-now {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover,
+.buy-now:hover {
+    background-color: #0056b3;
+}
+
+.shopping-cart {
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 50px;
+}
+
+#cartCount {
+    color:black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.buy-now ,
+.shopping-cart{
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #0056b3;
+}
+
